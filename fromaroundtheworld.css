@@ -1,0 +1,88 @@
+h2 {
+    font-size: 35px;
+    font-family:'courier';
+    color: rgba(112, 194, 246, 0.931);
+  margin-top: -60px;
+padding-left: 390px;
+
+}
+
+
+p {
+  
+  font-size: 20px;
+ padding-left: 650px;
+  font-family: 'Source Serif 4', serif;
+  padding-top: 1500px;
+  color: hotpink;
+  z-index: 10;
+position: absolute;
+padding-bottom: 100px;
+  }
+
+  h3 {
+    font-size: 20px;
+    color:hotpink;
+    font-family: 'american typewriter';
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding-top: 1055px;
+    position: absolute;
+    padding-left: 775px; 
+    z-index: 4;
+    }
+
+  h4 {
+    font-size: 20px;
+    color:hotpink;
+    font-family: 'american typewriter';
+    font-weight: 800;
+    letter-spacing: 1px;
+    position: absolute;
+    padding-left: 884px;
+    padding-top: 26px;
+    -webkit-transform:rotate(-340deg);
+    z-index: 9;
+  
+  
+    }
+
+  h5 {
+    font-size: 20px;
+    color:hotpink;
+    font-family: 'american typewriter';
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding-top: 242px;
+    position: absolute;
+    padding-left: 222px;  
+    -webkit-transform:rotate(-30deg);
+    z-index: 13;
+    }
+
+  h6 {
+    font-size: 20px;
+    color: hotpink;
+    font-family: 'american typewriter';
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding-top: 400px;
+    position: absolute;
+    padding-left: 980px;
+    -webkit-transform:rotate(-320deg);
+    z-index: 6;
+  }
+
+
+  h7 {
+    font-size: 20px;
+    color:hotpink;
+    font-family: 'american typewriter';
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding-top: 1232px;
+    position: absolute;
+    margin-left: -80px;
+    -webkit-transform:rotate(-25deg);
+    z-index: 14;
+  }

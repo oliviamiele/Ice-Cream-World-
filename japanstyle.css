@@ -1,0 +1,174 @@
+body {
+    background-image: url(Images/pink\ yellow\ gradient\ background.png);
+    background-size:cover;
+
+}
+   
+main {}
+    
+h1 {
+
+    font-size: 75px;
+    background: url("Images/lavender\ sparkle.gif"); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-family:'american typewriter';
+    -webkit-text-stroke: 2px;
+    color:rgb(101, 69, 158);
+    padding-left: 100px;
+    padding-top: 18px;
+    position: absolute;
+    z-index: 3;
+   }
+
+h2 { 
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 100px;
+    padding-top: 20px;
+    position: absolute;
+    color:hotpink;
+    z-index: 2;
+}
+
+h3 {
+    font-size: 40px;
+    font-family: "american typewriter";
+    font-weight: 300;
+    color: rgb(88, 104, 193);
+    padding-left: 750px;
+    padding-top: 260px;
+    position: absolute;
+
+}
+
+h4 {
+    font-size: 40px;
+    font-family: "american typewriter";
+    font-weight: 300;
+    color: rgb(88, 104, 193);
+    padding-left: 150px;
+    padding-top: 700px;
+    position: absolute;
+    
+
+}
+
+
+
+p {
+    font-size: 12px;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 400;
+    position: absolute;
+    padding-top: 350px; 
+    padding-right: 240px; 
+    text-indent: 20px;
+    padding-left: 750px;
+    line-height: 20px;
+}
+
+p2 {
+    font-size: 12px;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 400;
+    position: absolute;
+    padding-top: 820px; 
+    padding-right: 800px; 
+    text-indent: 20px;
+    padding-left: 150px;
+    line-height: 20px;
+    rotate: 30px;
+}
+p3 {
+
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Source Serif 4', serif;
+    padding-left: 150px;
+    padding-right: 990px;
+    padding-top: 615px;
+    position: absolute;
+    line-height: 15px;
+
+}
+
+
+p4 {
+
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Source Serif 4', serif;
+    padding-left: 820px;
+    padding-right: 200px;
+    padding-top: 1070px;
+    position: absolute;
+    line-height: 15px;
+}
+p5 {
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Source Serif 4', serif;
+    padding-left: 200px;
+  
+    padding-top: 1510px;
+    position: absolute;
+    line-height: 15px;
+
+}
+
+
+
+#franceshashimoto {
+    height: 300px;
+    width: auto;
+    padding-left: 150px;
+    padding-top: 300px;
+    position: absolute;
+}
+
+#yukimidaifuku {  
+    height: 280px;
+    width: auto;
+    position: absolute;
+    padding-left: 820px;
+    padding-top: 780px;
+
+}
+
+#mochiplatter {
+    height: 300px;
+    width: auto;
+    position: absolute;
+    padding-left: 200px;
+    padding-top: 1200px;
+    padding-bottom: 200px;
+
+}
+
+
+#confettiborder1 {
+    height: 250px;
+    width: auto;
+    padding-top: 0px;
+    position:absolute;
+    padding-left: 0px;
+    z-index: -1;
+}
+#confettiborder2 {
+    height: 250px;
+    width: autopx;
+    padding-top: 0px;
+    position:absolute;
+    padding-left: 460px;
+    z-index: -1;
+}
+#confettiborder3 {
+    height: 250px;
+    width: autopx;
+    padding-top: 0px;
+    position:absolute;
+    padding-left: 920px;
+    z-index: -1;
+}
+

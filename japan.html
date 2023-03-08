@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="japanstyle.css">
+    <link rel="stylesheet" href="java.js">
+    <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/cursors/cur-1/cur8.ani), url(https://cur.cursors-4u.net/cursors/cur-1/cur8.png), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2005/05/08/cur8.html" target="_blank" title="Sparkly Ice"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Sparkly Ice" style="position:absolute; top: 0px; right: 0px;" /></a>
+    <script type="text/javascript">
+      // <![CDATA[
+      var colour="#00baff";
+      var sparkles=120;
+      
+      /****************************
+      *  Tinkerbell Magic Sparkle *
+      * (c) 2005 mf2fm web-design *
+      *  http://www.mf2fm.com/rv  *
+      * DON'T EDIT BELOW THIS BOX *
+      ****************************/
+      var x=ox=400;
+      var y=oy=300;
+      var swide=800;
+      var shigh=600;
+      var sleft=sdown=0;
+      var tiny=new Array();
+      var star=new Array();
+      var starv=new Array();
+      var starx=new Array();
+      var stary=new Array();
+      var tinyx=new Array();
+      var tinyy=new Array();
+      var tinyv=new Array();
+      
+      window.onload=function() { if (document.getElementById) {
+        var i, rats, rlef, rdow;
+        for (var i=0; i<sparkles; i++) {
+          var rats=createDiv(3, 3);
+          rats.style.visibility="hidden";
+          document.body.appendChild(tiny[i]=rats);
+          starv[i]=0;
+          tinyv[i]=0;
+          var rats=createDiv(5, 5);
+          rats.style.backgroundColor="transparent";
+          rats.style.visibility="hidden";
+          var rlef=createDiv(1, 5);
+          var rdow=createDiv(5, 1);
+          rats.appendChild(rlef);
+          rats.appendChild(rdow);
+          rlef.style.top="2px";
+          rlef.style.left="0px";
+          rdow.style.top="0px";
+          rdow.style.left="2px";
+          document.body.appendChild(star[i]=rats);
+        }
+        set_width();
+        sparkle();
+      }}
+      
+      function sparkle() {
+        var c;
+        if (x!=ox || y!=oy) {
+          ox=x;
+          oy=y;
+          for (c=0; c<sparkles; c++) if (!starv[c]) {
+            star[c].style.left=(starx[c]=x)+"px";
+            star[c].style.top=(stary[c]=y)+"px";
+            star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+            star[c].style.visibility="visible";
+            starv[c]=50;
+            break;
+          }
+        }
+        for (c=0; c<sparkles; c++) {
+          if (starv[c]) update_star(c);
+          if (tinyv[c]) update_tiny(c);
+        }
+        setTimeout("sparkle()", 40);
+      }
+      
+      function update_star(i) {
+        if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+        if (starv[i]) {
+          stary[i]+=1+Math.random()*3;
+          if (stary[i]<shigh+sdown) {
+            star[i].style.top=stary[i]+"px";
+            starx[i]+=(i%5-2)/5;
+            star[i].style.left=starx[i]+"px";
+          }
+          else {
+            star[i].style.visibility="hidden";
+            starv[i]=0;
+            return;
+          }
+        }
+        else {
+          tinyv[i]=50;
+          tiny[i].style.top=(tinyy[i]=stary[i])+"px";
+          tiny[i].style.left=(tinyx[i]=starx[i])+"px";
+          tiny[i].style.width="2px";
+          tiny[i].style.height="2px";
+          star[i].style.visibility="hidden";
+          tiny[i].style.visibility="visible"
+        }
+      }
+      
+      function update_tiny(i) {
+        if (--tinyv[i]==25) {
+          tiny[i].style.width="1px";
+          tiny[i].style.height="1px";
+        }
+        if (tinyv[i]) {
+          tinyy[i]+=1+Math.random()*3;
+          if (tinyy[i]<shigh+sdown) {
+            tiny[i].style.top=tinyy[i]+"px";
+            tinyx[i]+=(i%5-2)/5;
+            tiny[i].style.left=tinyx[i]+"px";
+          }
+          else {
+            tiny[i].style.visibility="hidden";
+            tinyv[i]=0;
+            return;
+          }
+        }
+        else tiny[i].style.visibility="hidden";
+      }
+      
+      document.onmousemove=mouse;
+      function mouse(e) {
+        set_scroll();
+        y=(e)?e.pageY:event.y+sdown;
+        x=(e)?e.pageX:event.x+sleft;
+      }
+      
+      function set_scroll() {
+        if (typeof(self.pageYOffset)=="number") {
+          sdown=self.pageYOffset;
+          sleft=self.pageXOffset;
+        }
+        else if (document.body.scrollTop || document.body.scrollLeft) {
+          sdown=document.body.scrollTop;
+          sleft=document.body.scrollLeft;
+        }
+        else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+          sleft=document.documentElement.scrollLeft;
+        sdown=document.documentElement.scrollTop;
+        }
+        else {
+          sdown=0;
+          sleft=0;
+        }
+      }
+      
+      window.onresize=set_width;
+      function set_width() {
+        if (typeof(self.innerWidth)=="number") {
+          swide=self.innerWidth;
+          shigh=self.innerHeight;
+        }
+        else if (document.documentElement && document.documentElement.clientWidth) {
+          swide=document.documentElement.clientWidth;
+          shigh=document.documentElement.clientHeight;
+        }
+        else if (document.body.clientWidth) {
+          swide=document.body.clientWidth;
+          shigh=document.body.clientHeight;
+        }
+      }
+      
+      function createDiv(height, width) {
+        var div=document.createElement("div");
+        div.style.position="absolute";
+        div.style.height=height+"px";
+        div.style.width=width+"px";
+        div.style.overflow="hidden";
+        div.style.backgroundColor=colour;
+        return (div);
+      }
+      // ]]>
+      </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lora&family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lora&family=Roboto+Condensed&family=Roboto:wght@300&family=STIX+Two+Text:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lora&family=Roboto+Condensed&family=Roboto:wght@300&family=STIX+Two+Text:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,700;1,8..60,200;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+<main>
+    <h1> mochi ice cream </h1>
+    <h2> japan </h2>
+    <h3> history </h3>
+    <h4> how it's made</h4>
+</main>
+    
+<p>Mochi Ice cream was invented by Frances Hashimoto, the president of Mikawaya, a three generation Japanese family run business in Los Angeles, that sold Japanese sweets and snacks. Hashimoto’s most famous invention was Mochi Ice cream, which she created in the 1980’s (Watanabe). Mochi Ice cream is a fusion of both traditional Japanese and present day American cultures (Makalintal). Mochi ice cream can now be found in mainstream grocery stores (Watanabe).</p>
+<p2>Mochi Ice cream is a fusion of traditional Japanese Mochi, and American Ice cream. Traditional Japanese Mochi can be prepared sweet, or Savoury. Traditional Japanese Mochi are rice cakes made by pounding Japanese gluttonous short grain rice, and combining it with water before shaping it as desired. Mochi in Japan dates back all the way to the Nara period, from 710 to 794 AD. Mochi ice cream however, is a fairly modern invention, that take Mochi and wraps it around American style ice cream (Makalintal).  </p2>
+<p3> Fig.4 Hashimoto pictured with her invention </p3>
+<p4> Fig.5 Yukimi Daifuku, is the most popular mochi ice cream in Japan </p4>
+<p5> Fig.6 </p5>
+
+
+<div class="box1"></div>
+<div class="box2"></div>
+
+<img src="Images/frances hashimoto.png" id="franceshashimoto">
+<img src="Images/yukimidaifuku.jpg" id="yukimidaifuku">
+<img src="Images/colorfulmochiicecream.jpg" id="mochiplatter">
+
+
+<img src="Images/confettiparty.gif" id="confettiborder1">
+<img src="Images/confettiparty.gif" id="confettiborder2">
+<img src="Images/confettiparty.gif" id="confettiborder3">
+
+
+
+
+
+
+
+
+</body>
+</html>
+
