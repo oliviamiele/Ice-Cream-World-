@@ -3,7 +3,8 @@ main {
     padding-left: 100px;
     
     padding-top: 30px;
-    
+
+  
  }
  h1 {
     font-size: 90px;
@@ -34,12 +35,13 @@ head {
 
 
 body {
+
     background-color:rgba(253, 255, 205, 0.611);
     background-image: url(Images/confettiparty.gif);
-    background-size: 600px;
+    background-size: 500px;
     background-repeat:initial;
-   
-   
+    height: 1000px;
+    
     
 }
 
@@ -62,7 +64,7 @@ body {
     width: auto;
     padding-left: 700px;
     padding-top: 115px;
-    z-index: 7;
+    z-index: 10;
   
    
    }
@@ -74,7 +76,7 @@ body {
     height: 270px;
     padding-left: 700px;
     padding-top: 115px;
-    z-index: 7;
+    z-index: 10;
     
     }
 
@@ -92,7 +94,7 @@ body {
     width: auto;
     padding-left: 360px;
     padding-top: 110px;
-    z-index: 10;
+    z-index: 20;
     
 
   
@@ -105,7 +107,7 @@ body {
     height: 300px;
     padding-left: 360px;
     padding-top: 110px;
-    z-index: 10;
+    z-index:20;
   
     }
 
@@ -152,7 +154,7 @@ body {
     width: auto;
     padding-left: 390px;
     padding-top: 580px;
-    z-index: 1;
+    z-index: 5;
    }
   
    .mochiicecream-hover img {
@@ -161,7 +163,7 @@ body {
     height: 200px;
     padding-left: 390px;
     padding-top: 580px;
-    z-index: 1;
+    z-index: 5;
     
     }
 
@@ -170,13 +172,16 @@ body {
     cursor: pointer;
   }
 
+
+
+
   .spaghettieis-hover {
     position: absolute;
     height: 3200px;
     width: auto;
     padding-left: 300px;
     padding-top: 520px;
-    z-index: 12;
+    z-index: 20;
    }
   
    .spaghettieis-hover img {
@@ -186,7 +191,7 @@ body {
     height: 320px;
     padding-left: 300px;
     padding-top: 520px;
-    z-index: 12;
+    z-index: 20;
     }
 
   .spaghettieis-hover img.img-front:hover{
@@ -212,7 +217,7 @@ body {
     padding-left: 950px;
     padding-top: 15px;
     -webkit-transform:rotate(-340deg);
-    z-index: 8;
+    z-index: 3;
     position: absolute;
   }
   
@@ -222,7 +227,7 @@ body {
   padding-left: 310px;
   padding-top: 270px;
   -webkit-transform:rotate(-30deg);
-  z-index: 12;
+  z-index: 3;
   position: absolute;
 }
 #americasign {
@@ -230,7 +235,7 @@ body {
   padding-left: 1030px;
   padding-top: 400px;
   -webkit-transform:rotate(-320deg);
-  z-index: 5;
+  z-index: 3;
   position: absolute;
 }
 
@@ -247,7 +252,7 @@ body {
   padding-left: 10px;
   padding-top: 1210px;
   -webkit-transform:rotate(-25deg);
-  z-index: 13;
+  z-index: 3;
   position: absolute;
 }
 

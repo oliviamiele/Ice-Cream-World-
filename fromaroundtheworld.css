@@ -9,15 +9,17 @@ padding-left: 390px;
 
 
 p {
-  
+  position: absolute;
   font-size: 20px;
  padding-left: 650px;
-  font-family: 'Source Serif 4', serif;
-  padding-top: 1500px;
+  font-family: 'american typewriter';
+  padding-top: 1900px;
   color: hotpink;
-  z-index: 10;
-position: absolute;
-padding-bottom: 100px;
+  z-index: 4;
+
+ 
+ 
+  
   }
 
   h3 {
@@ -42,8 +44,8 @@ padding-bottom: 100px;
     padding-left: 884px;
     padding-top: 26px;
     -webkit-transform:rotate(-340deg);
-    z-index: 9;
-  
+    z-index: 4;
+
   
     }
 
@@ -57,7 +59,7 @@ padding-bottom: 100px;
     position: absolute;
     padding-left: 222px;  
     -webkit-transform:rotate(-30deg);
-    z-index: 13;
+    z-index: 4;
     }
 
   h6 {
@@ -70,7 +72,7 @@ padding-bottom: 100px;
     position: absolute;
     padding-left: 980px;
     -webkit-transform:rotate(-320deg);
-    z-index: 6;
+    z-index: 4;
   }
 
 
@@ -84,5 +86,5 @@ padding-bottom: 100px;
     position: absolute;
     margin-left: -80px;
     -webkit-transform:rotate(-25deg);
-    z-index: 14;
+    z-index: 4;
   }
