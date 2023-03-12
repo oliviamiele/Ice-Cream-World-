@@ -1,0 +1,147 @@
+body {
+    background-image: url(Images/pink\ yellow\ gradient\ background.png);
+    background-size:cover;
+
+}
+   
+main {}
+    
+  h1 {
+
+    font-size: 80px;
+    background: url("Images/pinkglitter.gif"); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;       
+    font-family:'american typewriter';
+    -webkit-text-stroke: 0px;
+    color:rgba(255, 154, 205, 0.395);
+    padding-left: 530px;
+    padding-top: 70px;
+    position: absolute;
+    z-index: 3;
+
+}
+
+h2 { 
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100px;
+    padding-left: 1263px;
+    margin-top: -2px;
+    position: absolute;
+    color:rgb(22, 94, 166);
+    z-index: 10;
+    position: fixed;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 50px;
+    font-family: "american typewriter";
+    font-weight: 300;
+    color: rgb(22, 94, 166) ;
+    padding-left: 785px;
+    padding-top: 970px;
+    position: absolute;
+
+}
+
+h4 {
+    font-size: 50px;
+    font-family: "american typewriter";
+    font-weight: 300;
+    color: rgb(22, 94, 166) ;
+    padding-left: 215px;
+    padding-top: 1490px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pinkwavy {
+    height:55px;
+    width: 1500px;
+    margin-top: -20px;
+    position: fixed;
+    z-index: 9;
+    margin-left: -11px;
+    margin-right: -1px;
+}
+.homebutton-hover {
+    height: 32px;
+    width: auto;
+    position: fixed;
+    margin-left: 40px;
+    margin-top: -2px;
+    z-index: 12;
+  
+   
+   }
+  
+   .homebutton-hover img {
+    height: 32px;
+    width: auto;
+    position: fixed;
+    margin-left: 40px;
+    margin-top: -2px;
+    z-index: 12;
+    
+    }
+
+  .homebutton-hover img.img-front:hover{
+    opacity:0;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+  
+
+
+#confettiborder1 {
+    height: 250px;
+    width: 500;
+    padding-top: 0px;
+    position:absolute;
+    padding-left: 0px;
+    z-index: -1;
+}
+#confettiborder2 {
+    height: 250px;
+    width: 500px;
+    padding-top: 0px;
+    position:absolute;
+    padding-left: 460px;
+    z-index: -1;
+}
+#confettiborder3 {
+    height: 250px;
+    width: 500px;
+    padding-top: 0px;
+    position:absolute;
+    padding-left: 970px;
+    z-index: -1;
+}

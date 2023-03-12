@@ -1,6 +1,7 @@
 body {
     background-image: url(Images/pink\ yellow\ gradient\ background.png);
     background-size:cover;
+ position: relative;
 
 }
    
@@ -16,41 +17,44 @@ h1 {
     -webkit-text-stroke: 0px;
     color:rgb(255, 154, 205);
     padding-left: 590px;
-    padding-top: 90px;
+    padding-top: 70px;
     position: absolute;
     z-index: 3;
 
    }
 
-h2 { 
-    font-size: 20px;
+
+   h2 { 
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 100px;
-    padding-left: 640px;
-    padding-top: 115px;
+    padding-left: 1200px;
+    margin-top: -2px;
     position: absolute;
-    color:rgb(249, 117, 183);
-    z-index: 2;
+    color:rgb(22, 94, 166);
+    z-index: 10;
+    position: fixed;
+    letter-spacing: 1px;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 50px;
     font-family: "american typewriter";
     font-weight: 300;
-    color: cornflowerblue;
+    color: rgb(48, 126, 204);
     padding-left: 350px;
-    padding-top: 750px;
+    padding-top: 745px;
     position: absolute;
 
 }
 
 h4 {
-    font-size: 40px;
+    font-size: 50px;
     font-family: "american typewriter";
     font-weight: 300;
-    color: cornflowerblue;
+    color: rgb(48, 126, 204);
     padding-left: 420px;
-    padding-top: 1175px;
+    padding-top: 1160px;
     position: absolute;
     padding-right: 470px;
 
@@ -66,7 +70,7 @@ p {
     padding-top: 850px; 
     padding-right: 750px; 
     padding-left: 350px;
-    line-height: 20px;
+    line-height: 23px;
     color: rgb(2, 2, 70);
 }
 
@@ -78,7 +82,7 @@ p2 {
     padding-top: 1300px; 
     padding-right: 580px; 
     padding-left: 460px;
-    line-height: 20px;
+    line-height: 23px;
     color: rgb(2, 2, 70);
 }
 p3 {
@@ -88,9 +92,9 @@ p3 {
     font-family: 'Source Serif 4', serif;
     padding-left: 155px;
     padding-right: 1100px;
-    padding-top: 1600px;
+    padding-top: 1605px;
     position: absolute;
-    line-height: 15px;
+    line-height: 17px;
     z-index: 4;
 
 }
@@ -99,11 +103,12 @@ p4 {
     font-size: 10px;
     font-weight: 400;
     font-family: 'Source Serif 4', serif;
-    padding-left: 695px;
+    padding-left: 465px;
     padding-right: 325px;
-    padding-top: 1900px;
+    padding-top: 583px;
     position: absolute;
     line-height: 15px;
+    z-index: 4;
 }
 
 p5 {
@@ -111,11 +116,12 @@ p5 {
     font-size: 10px;
     font-weight: 400;
     font-family: 'Source Serif 4', serif;
-    padding-left: 997px;
-    padding-right: 50px;
-    padding-top: 1260px;
+    padding-left: 955px;
+    padding-right: 100px;
+    padding-top: 1485px;
     position: absolute;
-    line-height: 15px;
+    line-height: 17px;
+    z-index: 4;
 }
 
 
@@ -215,14 +221,7 @@ p5 {
 
 }
 
-#pinkbox2 {
-    height: 560px;
-    width: 300px;
-    padding-top: 1000px;
-    position:absolute;
-    padding-left: 950px;
-    z-index: -1;
-}
+
 
 #pinkbox3 {
     height: 340px;
@@ -255,8 +254,59 @@ p5 {
 
 
 
+#pinkwavy {
+    height:55px;
+    width: 1500px;
+    margin-top: -20px;
+    position: fixed;
+    z-index: 9;
+    margin-left: -11px;
+    margin-right: -1px;
+}
 
-#confettiborder1 {
+
+.homebutton-hover {
+    height: 32px;
+    width: auto;
+    position: fixed;
+    margin-left: 40px;
+    margin-top: -2px;
+    z-index: 12;
+  
+   
+   }
+  
+   .homebutton-hover img {
+    height: 32px;
+    width: auto;
+    position: fixed;
+    margin-left: 40px;
+    margin-top: -2px;
+    z-index: 12;
+    
+    }
+
+  .homebutton-hover img.img-front:hover{
+    opacity:0;
+    cursor: pointer;
+  }
+
+
+
+  .box1 {
+    height: 420px;
+    width: 300px;
+    position: absolute;
+    margin-left: 950px;
+    margin-top: 1060px;
+    z-index: -1;
+    background-color:#ffa5e3;
+}
+
+
+
+
+  #confettiborder1 {
     height: 250px;
     width: 500;
     padding-top: 0px;

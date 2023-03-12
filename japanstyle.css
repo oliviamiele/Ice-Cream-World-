@@ -14,44 +14,47 @@ main {}
     -webkit-text-fill-color:transparent;       
     font-family:'american typewriter';
     -webkit-text-stroke: 0px;
-    color:rgb(255, 154, 205);
+    color:rgba(255, 154, 205, 0.395);
     padding-left: 390px;
-    padding-top: 90px;
+    padding-top: 70px;
     position: absolute;
     z-index: 3;
-    
+
 }
 
 h2 { 
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 100px;
-    padding-left: 676px;
-    padding-top: 100px;
+    padding-left: 1300px;
+    margin-top: -2px;
     position: absolute;
-    color:rgb(249, 117, 183);
-    z-index: 2;
+    color:rgb(22, 94, 166);
+    z-index: 10;
+    position: fixed;
+    letter-spacing: 1px;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 50px;
     font-family: "american typewriter";
     font-weight: 300;
-    color: rgb(88, 104, 193);
-    padding-left: 750px;
-    padding-top: 1300px;
+    color: rgb(22, 94, 166) ;
+    padding-left: 785px;
+    padding-top: 970px;
     position: absolute;
 
 }
 
 h4 {
-    font-size: 40px;
+    font-size: 50px;
     font-family: "american typewriter";
     font-weight: 300;
-    color: rgb(88, 104, 193);
-    padding-left: 150px;
-    padding-top: 700px;
+    color: rgb(22, 94, 166) ;
+    padding-left: 215px;
+    padding-top: 1490px;
     position: absolute;
+    
     
 
 }
@@ -59,15 +62,15 @@ h4 {
 
 
 p {
-    font-size: 12px;
+    font-size: 13px;
     font-family: 'Source Serif 4', serif;
     font-weight: 400;
     position: absolute;
-    padding-top: 350px; 
-    padding-right: 240px; 
-    text-indent: 20px;
-    padding-left: 750px;
-    line-height: 20px;
+    padding-top: 1080px; 
+    padding-right: 250px; 
+    padding-left: 790px;
+    line-height: 23px;
+    color: rgb(2, 2, 70);
 }
 
 p2 {
@@ -75,10 +78,9 @@ p2 {
     font-family: 'Source Serif 4', serif;
     font-weight: 400;
     position: absolute;
-    padding-top: 820px; 
+    padding-top: 1635px; 
     padding-right: 800px; 
-    text-indent: 20px;
-    padding-left: 150px;
+    padding-left: 215px;
     line-height: 20px;
     rotate: 30px;
 }
@@ -87,11 +89,12 @@ p3 {
     font-size: 10px;
     font-weight: 400;
     font-family: 'Source Serif 4', serif;
-    padding-left: 150px;
-    padding-right: 990px;
-    padding-top: 1400px;
+    padding-left: 170px;
+    padding-right: 1130px;
+    padding-top: 740px;
     position: absolute;
-    line-height: 15px;
+    line-height: 17px;
+    z-index: 4;
 
 }
 
@@ -101,9 +104,9 @@ p4 {
     font-size: 10px;
     font-weight: 400;
     font-family: 'Source Serif 4', serif;
-    padding-left: 820px;
+    padding-left: 793px;
     padding-right: 200px;
-    padding-top: 1070px;
+    padding-top: 1770px;
     position: absolute;
     line-height: 15px;
 }
@@ -111,9 +114,8 @@ p5 {
     font-size: 10px;
     font-weight: 400;
     font-family: 'Source Serif 4', serif;
-    padding-left: 200px;
-  
-    padding-top: 1510px;
+    padding-left: 603px;
+    padding-top: 563px;
     position: absolute;
     line-height: 15px;
 
@@ -122,10 +124,10 @@ p5 {
 
 
 #franceshashimoto {
-    height: 300px;
+    height: 310px;
     width: auto;
-    padding-left: 150px;
-    padding-top: 1000px;
+    padding-left: 210px;
+    padding-top: 760px;
     position: absolute;
 }
 
@@ -133,8 +135,8 @@ p5 {
     height: 280px;
     width: auto;
     position: absolute;
-    padding-left: 820px;
-    padding-top: 780px;
+    padding-left: 794px;
+    padding-top: 1480px;
 
 }
 
@@ -142,20 +144,114 @@ p5 {
     height: 200px;
     width: auto;
     position: absolute;
-    padding-left: 200px;
-    padding-top: 300px;
+    padding-left: 600px;
+    padding-top: 360px;
+
+}
+#mochistack {
+
+    height: 100px;
+    width: auto;
+    position: absolute;
+    padding-left: 620px;
+    padding-top: 2020px;
+    z-index: 5;
+}
+
+#mochicluster {
+    height: 90px;
+    width: auto;
+    position: absolute;
+    padding-left: 800px;
+    padding-top: 2050px;
+    z-index: 5;
+    padding-bottom: 40px;
 
 }
 
-.box1 {
-    height: 100px;
-    width: 350px;
+#mochipaper {
+    height:80px;
+    width: auto;
     position: absolute;
-    margin-left: 450px;
-    padding-top: 300px;
+    padding-left: 450px;
+    padding-top: 2050px;
+    z-index: 5;
+
+}
+
+
+
+
+
+
+
+
+#pinktextsquare {
+
+    height: 50px;
+    width: 150px;
+    padding-top: 730px;
+    position:absolute;
+    padding-left: 160px;
+    z-index: 2;
+
+}
+
+#blueline {
+    height: 1.5px;
+    width: 645px;
+    position: absolute;
+    padding-top: 980px;
+    padding-left: 790px;
+}
+
+
+
+.box1 {
+    height: 235px;
+    width: 230px;
+    position: absolute;
+    margin-left: 585px;
+    margin-top: 345px;
     z-index: -1;
     background-color:#ffa5e3;
 }
+.box3 {
+    height: 290px;
+    width:330px;
+    position: absolute;
+    margin-left: 820px;
+    margin-top: 1450px;
+    z-index: -1;
+    background-color:#ffa5e3;
+}
+.box2 {
+    height: 2px;
+    width:200px;
+    position: absolute;
+    margin-left: -10px;
+    margin-right:100px;
+    margin-top: 1585px;
+    z-index: 5;
+    background-color:#ffa5e3;
+}
+
+
+
+
+#pinkwavy {
+    height:55px;
+    width: 1500px;
+    margin-top: -20px;
+    position: fixed;
+    z-index: 9;
+    margin-left: -11px;
+    margin-right: -1px;
+}
+
+
+
+
 
 
 
@@ -184,3 +280,30 @@ p5 {
     z-index: -1;
 }
 
+
+
+.homebutton-hover {
+    height: 32px;
+    width: auto;
+    position: fixed;
+    margin-left: 40px;
+    margin-top: -2px;
+    z-index: 12;
+  
+   
+   }
+  
+   .homebutton-hover img {
+    height: 32px;
+    width: auto;
+    position: fixed;
+    margin-left: 40px;
+    margin-top: -2px;
+    z-index: 12;
+    
+    }
+
+  .homebutton-hover img.img-front:hover{
+    opacity:0;
+    cursor: pointer;
+  }
